@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface VotingConnectManager : NSObject
+
+
+typedef void (^datarequestComplete) (BOOL success, NSDictionary *result);
+
+@interface VotingConnectManager : NSObject<NSURLSessionDelegate, NSURLSessionDataDelegate>
+
+@property (strong, nonatomic) NSURLSessionConfiguration *configuration;
+@property (strong, nonatomic) NSURLSession *session;
+
++ (instancetype)sharedInstance;
+- (void) getWebserviceWithParameter : (NSDictionary *)param ObjectWithCommand:(NSString *)command token:(NSString *)token complete:(datarequestComplete)callback;
 
 @end

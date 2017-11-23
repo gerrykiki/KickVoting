@@ -10,4 +10,12 @@
 
 @interface UserObject : NSObject
 
+@property (strong, nonatomic) NSNumber *LoginState; //1:LogIn 2:LogOut
+@property (strong, nonatomic) NSString *UserID;
+@property (strong, nonatomic) NSString *Password;
+
+
++ (instancetype)sharedInstance;
+
+
 @end

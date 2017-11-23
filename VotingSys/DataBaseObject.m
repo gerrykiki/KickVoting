@@ -53,7 +53,7 @@ static DataBaseObject *sharedInstance = nil;
         if (sqlite3_open(dbpath, &db) == SQLITE_OK) {
             char *errMsg;
             // create SQL statements
-            const char *sql = "CREATE TABLE IF NOT EXISTS CommandTable (command_id TEXT PRIMARY KEY, Command_Name TEXT, Command_String TEXT)";
+            const char *sql = "CREATE TABLE IF NOT EXISTS USERTABLE (User TEXT PRIMARY KEY,Password TEXT,Loginstate INTEGER)";
             
             if (sqlite3_exec(db, sql, NULL, NULL, &errMsg) != SQLITE_OK) {
                 NSLog( @"Failed to create table");
@@ -72,7 +72,7 @@ static DataBaseObject *sharedInstance = nil;
     }
 }
 
-- (int) addcommandName : (NSString *)commandid{
+- (int) addUser : (NSString *)User_id Password:(NSString *)password LoginState:(NSNumber *)loginstate{
     sqlite3* db = NULL;
     int rc=0;
     
@@ -84,24 +84,52 @@ static DataBaseObject *sharedInstance = nil;
     }
     else
     {
-        NSString *query = [NSString stringWithFormat:@"INSERT INTO CommandTable (command_id) VALUES ('%@')", commandid];
+        NSString *query = [NSString stringWithFormat:@"INSERT INTO USERTABLE (User,Password,Loginstate) VALUES ('%@','%@',%d)", User_id,password,[loginstate intValue]];
         char * errMsg;
         rc = sqlite3_exec(db, query.UTF8String,NULL,NULL,&errMsg);
         
         if(SQLITE_OK != rc)
         {
-            NSLog(@"Failed to insert CommandTable rc:%d, msg=%s",rc,errMsg);
+            NSLog(@"Failed to insert USERTABLE rc:%d, msg=%s",rc,errMsg);
         }
         
         sqlite3_close(db);
     }
     return rc;
 }
-/*
-- (void) UpdateTheCommandName : (NSString *)commandname keynumber : (NSString *)commandid {
+
+- (int) deleteUserID {
+    sqlite3* db = NULL;
+    int rc=0;
+    
+    rc = sqlite3_open_v2([_database_filepath cStringUsingEncoding:NSUTF8StringEncoding], &db, SQLITE_OPEN_READWRITE, NULL);
+    if (SQLITE_OK != rc)
+    {
+        sqlite3_close(db);
+        NSLog(@"Failed to open db connection");
+    }
+    else
+    {
+        NSString *query = @"DELETE FROM USERTABLE";
+        char * errMsg;
+        rc = sqlite3_exec(db, query.UTF8String,NULL,NULL,&errMsg);
+        
+        if(SQLITE_OK != rc)
+        {
+            NSLog(@"Failed to delete user USERTABLE table rc:%d, msg=%s",rc,errMsg);
+        }
+        
+        sqlite3_close(db);
+    }
+    
+    return rc;
+}
+
+- (int) getUserInfo :(userid_query_complete)callback {
     sqlite3* db = NULL;
     sqlite3_stmt* stmt =NULL;
     int rc=0;
+    NSMutableArray *userID_dataset = [[NSMutableArray alloc] init];
     
     rc = sqlite3_open_v2([_database_filepath cStringUsingEncoding:NSUTF8StringEncoding], &db, SQLITE_OPEN_READWRITE , NULL);
     if (SQLITE_OK != rc)
@@ -111,31 +139,38 @@ static DataBaseObject *sharedInstance = nil;
     }
     else
     {
-        NSString *update = [NSString stringWithFormat:@"Update CommandTable Set Command_Name='%@' Where command_id='%@'",commandname,commandid];
+        NSString *query = [NSString stringWithFormat:@"SELECT * FROM 'USERTABLE'"];
+        char * errMsg = NULL;
+        rc =sqlite3_prepare_v2(db, [query UTF8String], -1, &stmt, NULL);
         
-        if (sqlite3_prepare_v2(db, update, -1, &stmt, NULL) != SQLITE_OK) {
-            NSLog(@"prepare update beverage profile failed");
-        }
-        if (sqlite3_bind_text(stmt, 1, s_id.UTF8String, -1, NULL) != SQLITE_OK) {
-            NSLog(@"bind update beverage id failed");
-            
-        }
-        if (sqlite3_bind_text(stmt, 2, local_id.UTF8String, -1, NULL) != SQLITE_OK) {
-            NSLog(@"bind where beverage local id failed");
-        }
-        
-        if (sqlite3_step(stmt) == SQLITE_DONE) {
-            NSLog(@"update beverage update successed");
+        if(SQLITE_OK != rc)
+        {
+            NSLog(@"getUserID, Failed to create table rc:%d, msg=%s",rc,errMsg);
+            callback(NO, nil);
         } else {
-            NSLog(@"update beverage update failed");
+            while (sqlite3_step(stmt) == SQLITE_ROW) //get each row in loop
+            {
+                
+                NSString * username =[NSString stringWithUTF8String:(const char *)sqlite3_column_text(stmt, 0)];
+                NSString * userpassword =[NSString stringWithUTF8String:(const char *)sqlite3_column_text(stmt, 1)];
+                NSNumber * Loginstate =[NSNumber numberWithInt:sqlite3_column_int(stmt, 2)];
+                NSDictionary *user_data =[NSDictionary dictionaryWithObjectsAndKeys:username,@"username",userpassword,@"userpassword",Loginstate,@"loginstate", nil];
+                [userID_dataset addObject:user_data];
+                
+            }
+            NSLog(@"Done");
+            sqlite3_finalize(stmt);
         }
-        sqlite3_finalize(stmt);
+        
         sqlite3_close(db);
+        callback(YES, userID_dataset);
     }
     
+    return rc;
+    
 }
-*/
-- (int) UpdateTheCommandName : (NSString *)commandname keynumber : (NSString *)commandid{
+
+- (int) UpdateUserInfoLoginState : (NSNumber *)LoginState UserID : (NSString *)userid{
     sqlite3* db = NULL;
     int rc=0;
     
@@ -147,13 +182,13 @@ static DataBaseObject *sharedInstance = nil;
     }
     else
     {
-        NSString *query = [NSString stringWithFormat:@"Update CommandTable Set Command_Name='%@' Where command_id='%@'",commandname,commandid];
+        NSString *query = [NSString stringWithFormat:@"Update USERTABLE Set Loginstate='%@' Where User='%@'",LoginState,userid];
         char * errMsg;
         rc = sqlite3_exec(db, query.UTF8String,NULL,NULL,&errMsg);
         
         if(SQLITE_OK != rc)
         {
-            NSLog(@"Failed to insert CommandTable rc:%d, msg=%s",rc,errMsg);
+            NSLog(@"Failed to insert USERTABLE rc:%d, msg=%s",rc,errMsg);
         }
         
         sqlite3_close(db);

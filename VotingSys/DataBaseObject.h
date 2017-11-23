@@ -9,13 +9,19 @@
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
 
+typedef void (^userid_query_complete) (BOOL success, NSMutableArray *record);
+
 @interface DataBaseObject : NSObject
 
 @property (strong, nonatomic) NSString *database_filepath;
 
 + (DataBaseObject *)sharedInstance;
 -(BOOL) createDatabase:(NSString *)databaseName;
-- (int) addcommandName : (NSString *)commandid;
-- (int) UpdateTheCommandName : (NSString *)commandname keynumber : (NSString *)commandid;
+- (int) addUser : (NSString *)User_id Password:(NSString *)password LoginState:(NSNumber *)loginstate;
+- (int) deleteUserID;
+- (int) getUserInfo :(userid_query_complete)callback;
+- (int) UpdateUserInfoLoginState : (NSNumber *)LoginState UserID : (NSString *)userid;
+
+
 
 @end

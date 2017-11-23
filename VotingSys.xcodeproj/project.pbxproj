@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283E301FE0AEA773F00F2558 /* libPods-VotingSysUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C154AAA22D39BEB142BD9B9 /* libPods-VotingSysUITests.a */; };
+		289D0483FA61962BFA94FE2B /* libPods-VotingSysTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6D091EAC0ECAA196B23C9F /* libPods-VotingSysTests.a */; };
+		AC1FC8FF2E82022D9D106DE2 /* libPods-VotingSys.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1869654B7136C75E5BE4A4FC /* libPods-VotingSys.a */; };
 		C325D6CF1FC444BA00162DE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C325D6CE1FC444BA00162DE5 /* AppDelegate.m */; };
 		C325D6D21FC444BA00162DE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C325D6D11FC444BA00162DE5 /* ViewController.m */; };
 		C325D6D51FC444BA00162DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C325D6D31FC444BA00162DE5 /* Main.storyboard */; };
@@ -15,6 +18,15 @@
 		C325D6DD1FC444BA00162DE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C325D6DC1FC444BA00162DE5 /* main.m */; };
 		C325D6E71FC444BA00162DE5 /* VotingSysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C325D6E61FC444BA00162DE5 /* VotingSysTests.m */; };
 		C325D6F21FC444BA00162DE5 /* VotingSysUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C325D6F11FC444BA00162DE5 /* VotingSysUITests.m */; };
+		C3BD9C6F1FC44A4600062F97 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD9C6E1FC44A4600062F97 /* IndexViewController.m */; };
+		C3BD9C741FC49E3100062F97 /* LoginInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD9C731FC49E3100062F97 /* LoginInViewController.m */; };
+		C3BD9C771FC4A04900062F97 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD9C761FC4A04900062F97 /* InfoViewController.m */; };
+		C3BD9C7A1FC4A18200062F97 /* UserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD9C791FC4A18200062F97 /* UserObject.m */; };
+		C3BD9C7F1FC5807300062F97 /* VotingConnectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD9C7E1FC5807300062F97 /* VotingConnectManager.m */; };
+		C3BD9C821FC58B6800062F97 /* DataBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD9C801FC58B6800062F97 /* DataBaseObject.m */; };
+		C3BD9C891FC6863700062F97 /* SlideMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD9C871FC6863700062F97 /* SlideMenuTableViewCell.m */; };
+		C3BD9C8A1FC6863700062F97 /* SlideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BD9C881FC6863700062F97 /* SlideMenuTableViewCell.xib */; };
+		C3BD9C8E1FC6872000062F97 /* SlideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD9C8D1FC6872000062F97 /* SlideMenuTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1869654B7136C75E5BE4A4FC /* libPods-VotingSys.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VotingSys.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C154AAA22D39BEB142BD9B9 /* libPods-VotingSysUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VotingSysUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6D091EAC0ECAA196B23C9F /* libPods-VotingSysTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VotingSysTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4948E59EE2473516935BA7 /* Pods-VotingSysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingSysTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VotingSysTests/Pods-VotingSysTests.debug.xcconfig"; sourceTree = "<group>"; };
+		62B51E9A9BBCEF0F1A07FF90 /* Pods-VotingSysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingSysUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VotingSysUITests/Pods-VotingSysUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0B4C4A6BFA59F5E6EAB5B20 /* Pods-VotingSys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingSys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VotingSys/Pods-VotingSys.debug.xcconfig"; sourceTree = "<group>"; };
 		C325D6CA1FC444BA00162DE5 /* VotingSys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VotingSys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C325D6CD1FC444BA00162DE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C325D6CE1FC444BA00162DE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +69,26 @@
 		C325D6ED1FC444BA00162DE5 /* VotingSysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VotingSysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C325D6F11FC444BA00162DE5 /* VotingSysUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VotingSysUITests.m; sourceTree = "<group>"; };
 		C325D6F31FC444BA00162DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3BD9C6D1FC44A4600062F97 /* IndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		C3BD9C6E1FC44A4600062F97 /* IndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		C3BD9C721FC49E3100062F97 /* LoginInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInViewController.h; sourceTree = "<group>"; };
+		C3BD9C731FC49E3100062F97 /* LoginInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInViewController.m; sourceTree = "<group>"; };
+		C3BD9C751FC4A04900062F97 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		C3BD9C761FC4A04900062F97 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		C3BD9C781FC4A18200062F97 /* UserObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserObject.h; sourceTree = "<group>"; };
+		C3BD9C791FC4A18200062F97 /* UserObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserObject.m; sourceTree = "<group>"; };
+		C3BD9C7D1FC5807300062F97 /* VotingConnectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VotingConnectManager.h; sourceTree = "<group>"; };
+		C3BD9C7E1FC5807300062F97 /* VotingConnectManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VotingConnectManager.m; sourceTree = "<group>"; };
+		C3BD9C801FC58B6800062F97 /* DataBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseObject.m; sourceTree = "<group>"; };
+		C3BD9C811FC58B6800062F97 /* DataBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseObject.h; sourceTree = "<group>"; };
+		C3BD9C861FC6863700062F97 /* SlideMenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenuTableViewCell.h; sourceTree = "<group>"; };
+		C3BD9C871FC6863700062F97 /* SlideMenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideMenuTableViewCell.m; sourceTree = "<group>"; };
+		C3BD9C881FC6863700062F97 /* SlideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		C3BD9C8C1FC6872000062F97 /* SlideMenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenuTableViewController.h; sourceTree = "<group>"; };
+		C3BD9C8D1FC6872000062F97 /* SlideMenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideMenuTableViewController.m; sourceTree = "<group>"; };
+		D5C797A3BD2AED1F95E11788 /* Pods-VotingSysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingSysUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VotingSysUITests/Pods-VotingSysUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D5EBA391C453BBCAFC8645D2 /* Pods-VotingSys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingSys.release.xcconfig"; path = "Pods/Target Support Files/Pods-VotingSys/Pods-VotingSys.release.xcconfig"; sourceTree = "<group>"; };
+		FF20F739EA360D660CE729B4 /* Pods-VotingSysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingSysTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VotingSysTests/Pods-VotingSysTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1FC8FF2E82022D9D106DE2 /* libPods-VotingSys.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289D0483FA61962BFA94FE2B /* libPods-VotingSysTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283E301FE0AEA773F00F2558 /* libPods-VotingSysUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +126,8 @@
 				C325D6E51FC444BA00162DE5 /* VotingSysTests */,
 				C325D6F01FC444BA00162DE5 /* VotingSysUITests */,
 				C325D6CB1FC444BA00162DE5 /* Products */,
+				FF877BF9782D9CA601AC452E /* Pods */,
+				EA444A5484A8C7C79BE1C2B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +149,23 @@
 				C325D6D01FC444BA00162DE5 /* ViewController.h */,
 				C325D6D11FC444BA00162DE5 /* ViewController.m */,
 				C325D6D31FC444BA00162DE5 /* Main.storyboard */,
+				C3BD9C8C1FC6872000062F97 /* SlideMenuTableViewController.h */,
+				C3BD9C8D1FC6872000062F97 /* SlideMenuTableViewController.m */,
+				C3BD9C861FC6863700062F97 /* SlideMenuTableViewCell.h */,
+				C3BD9C871FC6863700062F97 /* SlideMenuTableViewCell.m */,
+				C3BD9C881FC6863700062F97 /* SlideMenuTableViewCell.xib */,
+				C3BD9C751FC4A04900062F97 /* InfoViewController.h */,
+				C3BD9C761FC4A04900062F97 /* InfoViewController.m */,
+				C3BD9C781FC4A18200062F97 /* UserObject.h */,
+				C3BD9C791FC4A18200062F97 /* UserObject.m */,
+				C3BD9C7D1FC5807300062F97 /* VotingConnectManager.h */,
+				C3BD9C7E1FC5807300062F97 /* VotingConnectManager.m */,
+				C3BD9C721FC49E3100062F97 /* LoginInViewController.h */,
+				C3BD9C731FC49E3100062F97 /* LoginInViewController.m */,
+				C3BD9C6D1FC44A4600062F97 /* IndexViewController.h */,
+				C3BD9C6E1FC44A4600062F97 /* IndexViewController.m */,
+				C3BD9C811FC58B6800062F97 /* DataBaseObject.h */,
+				C3BD9C801FC58B6800062F97 /* DataBaseObject.m */,
 				C325D6D61FC444BA00162DE5 /* Assets.xcassets */,
 				C325D6D81FC444BA00162DE5 /* LaunchScreen.storyboard */,
 				C325D6DB1FC444BA00162DE5 /* Info.plist */,
@@ -132,6 +192,29 @@
 			path = VotingSysUITests;
 			sourceTree = "<group>";
 		};
+		EA444A5484A8C7C79BE1C2B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1869654B7136C75E5BE4A4FC /* libPods-VotingSys.a */,
+				1C6D091EAC0ECAA196B23C9F /* libPods-VotingSysTests.a */,
+				1C154AAA22D39BEB142BD9B9 /* libPods-VotingSysUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF877BF9782D9CA601AC452E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0B4C4A6BFA59F5E6EAB5B20 /* Pods-VotingSys.debug.xcconfig */,
+				D5EBA391C453BBCAFC8645D2 /* Pods-VotingSys.release.xcconfig */,
+				4C4948E59EE2473516935BA7 /* Pods-VotingSysTests.debug.xcconfig */,
+				FF20F739EA360D660CE729B4 /* Pods-VotingSysTests.release.xcconfig */,
+				62B51E9A9BBCEF0F1A07FF90 /* Pods-VotingSysUITests.debug.xcconfig */,
+				D5C797A3BD2AED1F95E11788 /* Pods-VotingSysUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C325D6F61FC444BA00162DE5 /* Build configuration list for PBXNativeTarget "VotingSys" */;
 			buildPhases = (
+				FD3D722D15579909A6E9476C /* [CP] Check Pods Manifest.lock */,
 				C325D6C61FC444BA00162DE5 /* Sources */,
 				C325D6C71FC444BA00162DE5 /* Frameworks */,
 				C325D6C81FC444BA00162DE5 /* Resources */,
+				23E17718415EE409746BE471 /* [CP] Embed Pods Frameworks */,
+				67CC759ABF1200436796079D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C325D6F91FC444BA00162DE5 /* Build configuration list for PBXNativeTarget "VotingSysTests" */;
 			buildPhases = (
+				0A8456A694DA638C65405BD2 /* [CP] Check Pods Manifest.lock */,
 				C325D6DE1FC444BA00162DE5 /* Sources */,
 				C325D6DF1FC444BA00162DE5 /* Frameworks */,
 				C325D6E01FC444BA00162DE5 /* Resources */,
+				EB2CE2481B8296CB20572DC2 /* [CP] Embed Pods Frameworks */,
+				25A1359F5A0AD2C6E67A9A86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C325D6FC1FC444BA00162DE5 /* Build configuration list for PBXNativeTarget "VotingSysUITests" */;
 			buildPhases = (
+				F698F56580AB9BB06484292C /* [CP] Check Pods Manifest.lock */,
 				C325D6E91FC444BA00162DE5 /* Sources */,
 				C325D6EA1FC444BA00162DE5 /* Frameworks */,
 				C325D6EB1FC444BA00162DE5 /* Resources */,
+				E88C7DF2A2427C55E39C2712 /* [CP] Embed Pods Frameworks */,
+				2E97D67973CA7847F8C198E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BD9C8A1FC6863700062F97 /* SlideMenuTableViewCell.xib in Resources */,
 				C325D6DA1FC444BA00162DE5 /* LaunchScreen.storyboard in Resources */,
 				C325D6D71FC444BA00162DE5 /* Assets.xcassets in Resources */,
 				C325D6D51FC444BA00162DE5 /* Main.storyboard in Resources */,
@@ -260,14 +353,169 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A8456A694DA638C65405BD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VotingSysTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23E17718415EE409746BE471 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VotingSys/Pods-VotingSys-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25A1359F5A0AD2C6E67A9A86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VotingSysTests/Pods-VotingSysTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E97D67973CA7847F8C198E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VotingSysUITests/Pods-VotingSysUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67CC759ABF1200436796079D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VotingSys/Pods-VotingSys-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E88C7DF2A2427C55E39C2712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VotingSysUITests/Pods-VotingSysUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2CE2481B8296CB20572DC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VotingSysTests/Pods-VotingSysTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F698F56580AB9BB06484292C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VotingSysUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3D722D15579909A6E9476C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VotingSys-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C325D6C61FC444BA00162DE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C325D6D21FC444BA00162DE5 /* ViewController.m in Sources */,
+				C3BD9C821FC58B6800062F97 /* DataBaseObject.m in Sources */,
 				C325D6DD1FC444BA00162DE5 /* main.m in Sources */,
+				C3BD9C771FC4A04900062F97 /* InfoViewController.m in Sources */,
 				C325D6CF1FC444BA00162DE5 /* AppDelegate.m in Sources */,
+				C3BD9C7A1FC4A18200062F97 /* UserObject.m in Sources */,
+				C3BD9C7F1FC5807300062F97 /* VotingConnectManager.m in Sources */,
+				C3BD9C6F1FC44A4600062F97 /* IndexViewController.m in Sources */,
+				C3BD9C891FC6863700062F97 /* SlideMenuTableViewCell.m in Sources */,
+				C3BD9C8E1FC6872000062F97 /* SlideMenuTableViewController.m in Sources */,
+				C3BD9C741FC49E3100062F97 /* LoginInViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,11 +676,13 @@
 		};
 		C325D6F71FC444BA00162DE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B4C4A6BFA59F5E6EAB5B20 /* Pods-VotingSys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29G3VK6224;
 				INFOPLIST_FILE = VotingSys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wistron.VotingSys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +692,13 @@
 		};
 		C325D6F81FC444BA00162DE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5EBA391C453BBCAFC8645D2 /* Pods-VotingSys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29G3VK6224;
 				INFOPLIST_FILE = VotingSys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wistron.VotingSys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +708,7 @@
 		};
 		C325D6FA1FC444BA00162DE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4948E59EE2473516935BA7 /* Pods-VotingSysTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +724,7 @@
 		};
 		C325D6FB1FC444BA00162DE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF20F739EA360D660CE729B4 /* Pods-VotingSysTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +740,7 @@
 		};
 		C325D6FD1FC444BA00162DE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B51E9A9BBCEF0F1A07FF90 /* Pods-VotingSysUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29G3VK6224;
@@ -500,6 +755,7 @@
 		};
 		C325D6FE1FC444BA00162DE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C797A3BD2AED1F95E11788 /* Pods-VotingSysUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29G3VK6224;

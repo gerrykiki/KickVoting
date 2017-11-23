@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface InfoViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *EnterBtn;
+@property (strong, nonatomic) IBOutlet UIView *AlertView;
+
+
 
 @end

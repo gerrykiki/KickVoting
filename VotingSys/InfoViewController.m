@@ -7,15 +7,19 @@
 //
 
 #import "InfoViewController.h"
+#import "UserObject.h"
 
 @interface InfoViewController ()
 
 @end
 
 @implementation InfoViewController
-
+@synthesize AlertView;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [AlertView setBackgroundColor:[UIColor grayColor]];
+    [self.EnterBtn addTarget:self action:@selector(GoToIndex:) forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view.
 }
 
@@ -24,6 +28,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)GoToIndex:(id)sender{
+    [UserObject sharedInstance].LoginState = [NSNumber numberWithInt:0];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
